@@ -1,0 +1,13 @@
+.project-image {
+    width: 50%;
+    @extend %clearfix;
+}
+
+figure {
+    margin: $spacing_unit/4;
+    border: 1px solid $grey-color-light;
+
+    figcaption {
+        margin-top: 2px;
+    }
+}

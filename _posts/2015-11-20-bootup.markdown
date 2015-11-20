@@ -1,6 +1,19 @@
 ---
 layout: post
 title: "BootUp"
-categories: project update
+thumbnail: /assets/bootup/thumbnail.png
+categories: project assessment web2py bootstrap jquery
 ---
-This is about my BootUp project.
+Ever wanted to see an alternative to Kickstarter or Indiegogo? Well, that's what BootUp is for...
+
+{% include image.html url="/assets/bootup/home.png" description="BootUp homepage" location="left" %}
+
+I created BootUp as fulfillment for an assessment as part of the third year module Interactive Application Programming Techniques at the University of York. The focus of the assessment was creating a usable and accessible website that matched a set of requirements we were given.
+
+The design and implementation was done solely by myself. With regards to the design, we had to use user-centred design principles.
+
+{% include image.html url="/assets/bootup/project.png" description="BootUp project page" location="right" %}
+
+More information and instructions on how to try BootUp yourself can be found on the [repo website](http://terminalstar.github.io/BootupFinal/).
+
+BootUp was built with [web2py](http://web2py.com/), [jQuery](http://jquery.com/), [Bootstrap](http://getbootstrap.com/), and [SQLite](https://www.sqlite.org/).

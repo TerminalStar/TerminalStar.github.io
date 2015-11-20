@@ -10,14 +10,16 @@ layout: default
         {% for post in site.posts %}
             <li>
                 <div style="float: left;">
+                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
                     {% if post.thumbnail %}
-                        <img src="{{ post.thumbnail }}" />
+                        <img src="{{ post.thumbnail }}" alt="{{ post.title }}" />
                     {% else %}
-                        <img src="http://lorempixel.com/200/200/animals" />
+                        <img src="http://lorempixel.com/200/200/animals" alt="{{ post.title }}"/>
                     {% endif %}
+                    </a>
                 </div>
 
-                <div style="float: left; margin-left: 10px;">
+                <div style="float: left; margin-left: 10px; width: 50%;">
                     <span class="post-meta">{{ post.date | date: "%b %-d, %Y"}}</span>
 
                     <h2>
@@ -30,8 +32,8 @@ layout: default
                     {{ post.excerpt }}
 
                     <p>
-                        Tags: 
-                        {% for category in post.categories %}{{ category }}{% endfor %}
+                        Tags:
+                        {{ post.categories | join:', ' }}
                     </p>
                 </div>
 
