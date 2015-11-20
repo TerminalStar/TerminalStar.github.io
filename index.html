@@ -4,6 +4,39 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Projects</h1>
+    <h1 class="page-heading">Projects</h1>
 
+    <ul class="post-list">
+        {% for post in site.posts %}
+            <li>
+                <div style="float: left;">
+                    {% if post.thumbnail %}
+                        <img src="{{ post.thumbnail }}" />
+                    {% else %}
+                        <img src="http://lorempixel.com/200/200/animals" />
+                    {% endif %}
+                </div>
+
+                <div style="float: left; margin-left: 10px;">
+                    <span class="post-meta">{{ post.date | date: "%b %-d, %Y"}}</span>
+
+                    <h2>
+                        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                            {{ post.title }}
+                        </a>
+                    </h2>
+
+                    <!-- Jekyll adds <p> tags to  excerpts -->
+                    {{ post.excerpt }}
+
+                    <p>
+                        Tags: 
+                        {% for category in post.categories %}{{ category }}{% endfor %}
+                    </p>
+                </div>
+
+                <div style="clear:both;"></div>
+            </li>
+        {% endfor %}
+    </ul>
 </div>
