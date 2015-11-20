@@ -4,8 +4,12 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+![My Face](/assets/about/me.jpg){: .icon}
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+#Me
+I am in my final year studying for my MEng in Computer Science (with a year in industry).
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+![Octocat](/assets/about/octocat.png){: .icon .top-space}
+
+#This Site
+This site was built using the [base Jekyll theme](http://jekyllrb.com/) and [Github pages](https://pages.github.com/).
